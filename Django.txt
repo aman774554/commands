@@ -1,0 +1,74 @@
+conda create --name myenv django
+conda create --name myenv python=3.5
+
+#To run:-mkdir My_django
+deactivate myenv
+
+#To check env:-
+conda info --envs
+
+#Installation
+activate myenv
+conda install django
+
+#first project
+mkdir My_django
+cd My_django
+activate myenv
+django-admin startproject first_project
+
+# Run server
+cd first_project
+Python manage.py runserver
+
+#Create a simple app:-
+python manage.py startapp blog_app
+
+#Image
+address/static/images/djangoguitar.jpg
+
+#Model
+python manage.py migrate
+python manage.py makemigrations first_app
+python manage.py migrate
+python manage.py shell
+
+#Database model
+from first_app.models import Topic
+print(Topic.objects.all())
+t = Topic(top_name="Social Network")
+t.save()
+print(Topic.objects.all())
+quit()
+
+#Superuser
+python manage.py createsuperuser
+
+#Dummy Data (check env)
+pip install Faker
+python populate_blog_app.py (run it)
+
+#Password
+In env
+pip install bcrypt
+pip install django[argon2]
+
+#Image Field
+pip install pillow
+
+#Django Deployment
+git init
+git add .
+git config --global user.email "aman774554@gmail.com"
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/aman774554/Django---deployment-example.git
+git push -u origin main
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+Install/update node js
+Install create-react-app
+
+###Install Node
+node -V
+
+###Install React
+npm install -g create-react-app
+cd Desktop
+create-react-app first-app
+
+###Run React
+cd first-app
+npm start
+
+
+props
+state - (setState)
+render - return JSX
+componentDidMount - Good place for data loading
+componentDidUpdate - Good place to do more data loading when state/props change
+componentwillUnmount - Good place to do clean up
+event
+onChange
+onSubmit
+
+#API
+npm install --save axios
+
+#Router
+React router
+npm install react-router-dom
+
+#Redux
+npm install redux react-redux
+npm install redux-thunk axios
+
+
+ 
